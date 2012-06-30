@@ -16,7 +16,7 @@ import java.util.TreeSet;
 
 public class DarkfallGearOptimizer {
 
-    public static final String[] TARGETED_STATS = { "Fire", "Slashing" };
+    public static final String[] DEFAULT_TARGETED_STATS = { "Fire", "Slashing" };
 
     public static enum PROTECTION {
         Bludgeoning, Piercing, Slashing, Acid, Cold, Fire, Holy, Lightning, Unholy, Arcane, Impact
@@ -55,7 +55,7 @@ public class DarkfallGearOptimizer {
         if (bufferedReader != null) {
             String line;
             try {
-                dataColumns = bufferedReader.readLine().replaceAll("\"", "").split(",");
+                dataColumns = bufferedReader.readLine().split(",");
                 while ((line = bufferedReader.readLine()) != null) {
                     line = line.replaceAll("\"", "");
                     Armor thisArmor = new Armor(line);

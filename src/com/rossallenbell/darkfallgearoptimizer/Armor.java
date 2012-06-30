@@ -60,6 +60,6 @@ public class Armor {
     
     @Override
     public String toString(){
-        return this.slot + "-" + this.type;
+        return this.slot + " - " + this.type;
     }
 }
