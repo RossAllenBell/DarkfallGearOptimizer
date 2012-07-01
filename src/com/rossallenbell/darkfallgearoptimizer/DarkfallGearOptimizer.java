@@ -1,8 +1,16 @@
 
 package com.rossallenbell.darkfallgearoptimizer;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -15,10 +23,6 @@ public class DarkfallGearOptimizer {
         Bludgeoning, Piercing, Slashing, Acid, Cold, Fire, Holy, Lightning, Unholy, Impact
     }
 
-    public static final PROTECTION[] PHYSICAL_PROTECTIONS = { PROTECTION.Bludgeoning, PROTECTION.Piercing, PROTECTION.Slashing };
-
-    public static final PROTECTION[] MAGICAL_PROTECTIONS = { PROTECTION.Acid, PROTECTION.Cold, PROTECTION.Fire, PROTECTION.Holy, PROTECTION.Lightning, PROTECTION.Unholy };
-
     public static enum ARMOR_TYPE {
         Cloth, Padded, Leather, Studded, Bone, Chain, Banded, Scale, Plate, FullPlate, Infernal, Dragon, NoArmor
     }
@@ -26,9 +30,22 @@ public class DarkfallGearOptimizer {
     public static enum ARMOR_SLOT {
         Chest, Head, Legs, Boots, Gauntlets, Arms, Elbows, Shoulders, Greaves, Girdle
     }
+    
+    public static final DecimalFormat formatter = new DecimalFormat("00.00");
+    
+    @SuppressWarnings("serial")
+    public static final Map<PROTECTION, Double> protectionWeights = new HashMap<PROTECTION, Double>(){
+        {
+            this.put(PROTECTION.Slashing, 1.0);
+            this.put(PROTECTION.Fire, 1.0);
+        }
+    };
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         String filePath = "./data/default_set.csv";
+        //String filePath = "./data/short_set.csv";
+        //String filePath = "./data/all_armor.csv";
+        
         Set<Armor> armors = new CsvArmorProvider().readFilePath(filePath);
         System.out.println(String.format("Found %d pieces of armor at %s", armors.size(), filePath));
         ArmorCombinator combinator = new ArmorCombinator(armors);
@@ -45,6 +62,21 @@ public class DarkfallGearOptimizer {
         System.out.println("Producing all armor combinations...");
         Set<ArmorSet> armorSets = combinator.getArmorSets();
         System.out.println(String.format("Unique armor combinations found: %d", armorSets.size()));
+        System.out.println("Ordering and filtering out non-ideal sets...");
+        ArmorRanker ranker = new ArmorRanker(armorSets);
+        Collection<ArmorSet> winningArmorSets = ranker.getWinningSets();
+        System.out.println(String.format("Ideal armor combinations found: %d", winningArmorSets.size()));
+        writeOutResults(ranker.getWinningSets());
     }
 
+    private static void writeOutResults(Collection<ArmorSet> winningSets) throws IOException {
+        String filePath = "./results_" + System.currentTimeMillis() + ".txt";
+        System.out.println("Writing to path: " + filePath);
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File(filePath)));
+        for(ArmorSet armorSet : winningSets){
+            bufferedWriter.write(armorSet.toString());
+        }
+        bufferedWriter.close();
+    }
+    
 }

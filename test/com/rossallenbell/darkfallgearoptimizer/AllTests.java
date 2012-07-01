@@ -7,7 +7,7 @@ import org.junit.runners.Suite.SuiteClasses;
 import com.rossallenbell.darkfallgearoptimizer.data.CsvArmorProviderTest;
 
 @RunWith(Suite.class)
-@SuiteClasses({ ArmorCombinatorTest.class, ArmorSetTest.class, CsvArmorProviderTest.class })
+@SuiteClasses({ ArmorCombinatorTest.class, ArmorSetTest.class, CsvArmorProviderTest.class, ArmorRankerTest.class })
 public class AllTests {
     
 }

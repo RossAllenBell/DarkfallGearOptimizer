@@ -33,6 +33,13 @@ public class ArmorCombinator {
         Set<ArmorSet> armorSets = new HashSet<ArmorSet>();
         
         Map<ARMOR_SLOT, List<Armor>> slotBuckets = getSlotBuckets();
+        long totalPossibleNonUniqueArmorSets = 1;
+        for(ARMOR_SLOT slot : ARMOR_SLOT.values()){
+            int slotCount = slotBuckets.containsKey(slot)? slotBuckets.get(slot).size() : 0;
+            if(slotCount != 0){
+                totalPossibleNonUniqueArmorSets *= slotCount;
+            }
+        }
         List<ARMOR_SLOT> slots = new ArrayList<ARMOR_SLOT>(slotBuckets.keySet());
         Map<ARMOR_SLOT, Integer> slotPointers = new HashMap<ARMOR_SLOT, Integer>();
         for(ARMOR_SLOT slot : slots){
@@ -59,7 +66,7 @@ public class ArmorCombinator {
             }
             count++;
             if(count % 100000 == 0){
-                System.out.println(String.format("Processed %d combinations, retaining %d", count, armorSets.size() ));
+                System.out.println(String.format("Processed %d (%s%%) combinations, retaining %d (%s%%)", count, DarkfallGearOptimizer.formatter.format(((double) count) / totalPossibleNonUniqueArmorSets * 100), armorSets.size(), DarkfallGearOptimizer.formatter.format(((double) armorSets.size()) / totalPossibleNonUniqueArmorSets * 100) ));
             }
         }
         

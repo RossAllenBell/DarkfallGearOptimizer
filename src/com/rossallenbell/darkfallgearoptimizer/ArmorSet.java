@@ -1,59 +1,68 @@
 package com.rossallenbell.darkfallgearoptimizer;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
-import java.util.Set;
+
+import com.rossallenbell.darkfallgearoptimizer.Armor.SlotAgnosticArmor;
 
 public class ArmorSet {
     
-    private final Set<Armor> armors;
+    private final Map<SlotAgnosticArmor, Integer> saArmors;
     
-    private final Map<Armor.SlotAgnosticArmor, Integer> saArmors;
+    double encumbrance;
+    
+    double resistanceScore;
     
     public ArmorSet() {
-        this.armors = new HashSet<Armor>();
-        this.saArmors = new HashMap<Armor.SlotAgnosticArmor, Integer>();
+        this.saArmors = new HashMap<SlotAgnosticArmor, Integer>();
     }
     
     public double getEncumbrance() {
-        double encumbrance = 0;
-        for (Armor armor : armors) {
-            encumbrance += armor.encumbrance;
-        }
         return encumbrance;
     }
     
     public double getResistanceScore() {
-        double resistanceScore = 0;
-        for (Armor armor : armors) {
-            resistanceScore += armor.getResistanceScore();
-        }
         return resistanceScore;
     }
     
+    public Map<SlotAgnosticArmor, Integer> getSAArmorWithCounts(){
+        return saArmors;
+    }
+    
     public void addArmor(Armor armor) {
-        for (Armor existingArmor : armors) {
-            if (existingArmor.slot.equals(armor.slot)) {
-                throw new IllegalArgumentException("The armor: " + armor
-                        + " is for a slot already occupied in the armor set: "
-                        + this);
-            }
-        }
-        armors.add(armor);
-        
         /*
          * This may look funky, but all it's really doing is allowing us to take
          * advantage of the concept involved where an armor set with scale arms
          * and full plate gloves is the same as one with full plate arms and
          * scale gloves
          */
-        Armor.SlotAgnosticArmor sahArmor = armor.getSlotAgnosticArmor();
-        if (!saArmors.containsKey(sahArmor)) {
-            saArmors.put(sahArmor, 0);
+        SlotAgnosticArmor saArmor = armor.getSlotAgnosticArmor();
+        if (!saArmors.containsKey(saArmor)) {
+            saArmors.put(saArmor, 1);
+        } else {
+            saArmors.put(saArmor, saArmors.get(saArmor) + 1);
         }
-        saArmors.put(sahArmor, saArmors.get(sahArmor) + 1);
+        
+        encumbrance += saArmor.getEncumbrance();
+        resistanceScore += saArmor.getResistanceScore();
+    }
+    
+    @Override
+    public String toString(){
+        String rVal = "[encumbrance: " + DarkfallGearOptimizer.formatter.format(encumbrance)
+                + "\n resist: " + DarkfallGearOptimizer.formatter.format(resistanceScore);
+        List<SlotAgnosticArmor> armorsList = new ArrayList<SlotAgnosticArmor>(saArmors.keySet());
+        Collections.sort(armorsList);
+        for(Armor.SlotAgnosticArmor saArmor : armorsList){
+            for(int i=0; i<saArmors.get(saArmor); i++){
+                rVal = rVal + "\n\t" + saArmor;
+            }
+        }
+        rVal = rVal + "\n]\n";
+        return rVal;
     }
     
     @Override
@@ -71,13 +80,6 @@ public class ArmorSet {
             return false;
         ArmorSet other = (ArmorSet) obj;
         return saArmors.equals(other.saArmors);
-    }
-    
-    @Override
-    public String toString() {
-        return "[encumbrance=" + getEncumbrance() + ",\n\tresistanceScore="
-                + getResistanceScore() + ",\n\t"
-                + Arrays.toString(armors.toArray()) + "]";
     }
     
 }

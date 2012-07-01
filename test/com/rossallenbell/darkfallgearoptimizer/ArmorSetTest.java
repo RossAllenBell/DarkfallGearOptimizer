@@ -41,15 +41,7 @@ public class ArmorSetTest {
             armorSet.addArmor(armor);
         }
         assertEquals(11, armorSet.getEncumbrance(), 0);
-        assertEquals(0.93, armorSet.getResistanceScore(), 0.01);
-    }
-    
-    @Test(expected=IllegalArgumentException.class)
-    public void testIndexOutOfBoundsException() {
-        ArmorSet armorSet = new ArmorSet();
-        Armor armor = armors.iterator().next();
-        armorSet.addArmor(armor);
-        armorSet.addArmor(armor);
+        assertEquals(1.31, armorSet.getResistanceScore(), 0.01);
     }
     
     @Test
