@@ -1,68 +1,83 @@
-
 package com.rossallenbell.darkfallgearoptimizer;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
-import com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer.OPTIMIZATION;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class ArmorSet {
-
-    public Collection<Armor> armors;
-
-    public double averagePhysicalResistance;
-
-    public double averageMagicalResistance;
-
-    public double averageResistance;
-
-    public double encumbrance;
-
-    public int ingots;
-
+    
+    private final Set<Armor> armors;
+    
+    private final Map<Armor.SlotAgnosticArmor, Integer> saArmors;
+    
     public ArmorSet() {
-        this.armors = new ArrayList<Armor>();
-
-        this.averagePhysicalResistance = 0;
-        this.averageMagicalResistance = 0;
-        this.averageResistance = 0;
-        this.encumbrance = 0;
-        this.ingots = 0;
+        this.armors = new HashSet<Armor>();
+        this.saArmors = new HashMap<Armor.SlotAgnosticArmor, Integer>();
     }
-
-    public void addArmor(Armor armor) {
-        this.armors.add(armor);
-        this.averagePhysicalResistance += armor.averagePhysicalResistance;
-        this.averageMagicalResistance += armor.averageMagicalResistance;
-        if(DarkfallGearOptimizer.RESULTS_OPTIMIZATION == OPTIMIZATION.Physical){
-            this.averageResistance = this.averagePhysicalResistance;
-        } else if(DarkfallGearOptimizer.RESULTS_OPTIMIZATION == OPTIMIZATION.Magical){
-            this.averageResistance = this.averageMagicalResistance;
-        } else {
-            this.averageResistance = (this.averageMagicalResistance + this.averagePhysicalResistance) / 2;            
+    
+    public double getEncumbrance() {
+        double encumbrance = 0;
+        for (Armor armor : armors) {
+            encumbrance += armor.encumbrance;
         }
-        this.encumbrance += armor.encumbrance;
-        this.ingots += armor.ingots;
+        return encumbrance;
     }
-
+    
+    public double getResistanceScore() {
+        double resistanceScore = 0;
+        for (Armor armor : armors) {
+            resistanceScore += armor.getResistanceScore();
+        }
+        return resistanceScore;
+    }
+    
+    public void addArmor(Armor armor) {
+        for (Armor existingArmor : armors) {
+            if (existingArmor.slot.equals(armor.slot)) {
+                throw new IllegalArgumentException("The armor: " + armor
+                        + " is for a slot already occupied in the armor set: "
+                        + this);
+            }
+        }
+        armors.add(armor);
+        
+        /*
+         * This may look funky, but all it's really doing is allowing us to take
+         * advantage of the concept involved where an armor set with scale arms
+         * and full plate gloves is the same as one with full plate arms and
+         * scale gloves
+         */
+        Armor.SlotAgnosticArmor sahArmor = armor.getSlotAgnosticArmor();
+        if (!saArmors.containsKey(sahArmor)) {
+            saArmors.put(sahArmor, 0);
+        }
+        saArmors.put(sahArmor, saArmors.get(sahArmor) + 1);
+    }
+    
+    @Override
+    public int hashCode() {
+        return saArmors.hashCode();
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        ArmorSet other = (ArmorSet) obj;
+        return saArmors.equals(other.saArmors);
+    }
+    
     @Override
     public String toString() {
-        StringBuilder rVal = new StringBuilder();
-
-        rVal.append("[ArmorSet:\n");
-        if(DarkfallGearOptimizer.RESULTS_OPTIMIZATION == OPTIMIZATION.Both){
-            rVal.append("averageResistance: " + this.averageResistance + "\n");
-        }
-        rVal.append("averagePhysicalResistance: " + this.averagePhysicalResistance + "\n");
-        rVal.append("averageMagicalResistance: " + this.averageMagicalResistance + "\n");
-        rVal.append("encumbrance: " + this.encumbrance + "\n");
-        rVal.append("ingots: " + this.ingots + "\n");
-        for (Armor armor : this.armors) {
-            rVal.append("\t" + armor.toString() + "\n");
-        }
-        rVal.append("]");
-
-        return rVal.toString();
+        return "[encumbrance=" + getEncumbrance() + ",\n\tresistanceScore="
+                + getResistanceScore() + ",\n\t"
+                + Arrays.toString(armors.toArray()) + "]";
     }
-
+    
 }
