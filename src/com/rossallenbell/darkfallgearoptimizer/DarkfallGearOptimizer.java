@@ -43,10 +43,25 @@ public class DarkfallGearOptimizer {
         // Parse arguments
         String filePath = "./data/default_set.csv";
         boolean useLegacy = false;
+        int threads = 1;
 
-        for (String arg : args) {
+        for (int i = 0; i < args.length; i++) {
+            String arg = args[i];
             if (arg.equals("--use-legacy")) {
                 useLegacy = true;
+            } else if (arg.equals("--threads")) {
+                if (i + 1 < args.length) {
+                    try {
+                        threads = Integer.parseInt(args[i + 1]);
+                        i++; // Skip next arg
+                    } catch (NumberFormatException e) {
+                        System.err.println("Invalid thread count: " + args[i + 1]);
+                        System.exit(1);
+                    }
+                } else {
+                    System.err.println("--threads requires a number argument");
+                    System.exit(1);
+                }
             } else if (!arg.startsWith("--")) {
                 filePath = arg;
             }
@@ -77,9 +92,14 @@ public class DarkfallGearOptimizer {
             System.out.println("Ordering and filtering out non-ideal sets...");
             ArmorRanker ranker = new ArmorRanker(armorSets);
             winningArmorSets = ranker.getWinningSets();
+        } else if (threads > 1) {
+            // Optimized approach with parallelization (Phase 1-3)
+            System.out.println(String.format("Using optimized mode with %d threads (Phase 1-3: incremental Pareto filtering + hash deduplication + parallelization)", threads));
+            System.out.println("Producing Pareto-optimal armor combinations...");
+            winningArmorSets = new ParallelArmorCombinator(armors, threads).getOptimalArmorSets();
         } else {
-            // Optimized approach: filter during generation (Phase 1)
-            System.out.println("Using optimized mode (Phase 1: incremental Pareto filtering)");
+            // Optimized approach: filter during generation (Phase 1-2)
+            System.out.println("Using optimized mode (Phase 1-2: incremental Pareto filtering + hash deduplication)");
             System.out.println("Producing Pareto-optimal armor combinations...");
             winningArmorSets = combinator.getOptimalArmorSets();
         }
