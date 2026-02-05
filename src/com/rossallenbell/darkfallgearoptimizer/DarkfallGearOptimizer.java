@@ -40,10 +40,18 @@ public class DarkfallGearOptimizer {
     };
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
+        // Parse arguments
         String filePath = "./data/default_set.csv";
-        //String filePath = "./data/short_set.csv";
-        //String filePath = "./data/all_armor.csv";
-        
+        boolean useLegacy = false;
+
+        for (String arg : args) {
+            if (arg.equals("--use-legacy")) {
+                useLegacy = true;
+            } else if (!arg.startsWith("--")) {
+                filePath = arg;
+            }
+        }
+
         Set<Armor> armors = new CsvArmorProvider().readFilePath(filePath);
         System.out.println(String.format("Found %d pieces of armor at %s", armors.size(), filePath));
         ArmorCombinator combinator = new ArmorCombinator(armors);
@@ -57,14 +65,27 @@ public class DarkfallGearOptimizer {
             }
         }
         System.out.println(String.format("Total possible armor set combinations: %d", totalPossibleNonUniqueArmorSets));
-        System.out.println("Producing all armor combinations...");
-        Set<ArmorSet> armorSets = combinator.getArmorSets();
-        System.out.println(String.format("Unique armor combinations found: %d", armorSets.size()));
-        System.out.println("Ordering and filtering out non-ideal sets...");
-        ArmorRanker ranker = new ArmorRanker(armorSets);
-        Collection<ArmorSet> winningArmorSets = ranker.getWinningSets();
+
+        Collection<ArmorSet> winningArmorSets;
+
+        if (useLegacy) {
+            // Legacy approach: generate all, then filter
+            System.out.println("Using legacy mode (--use-legacy)");
+            System.out.println("Producing all armor combinations...");
+            Set<ArmorSet> armorSets = combinator.getArmorSets();
+            System.out.println(String.format("Unique armor combinations found: %d", armorSets.size()));
+            System.out.println("Ordering and filtering out non-ideal sets...");
+            ArmorRanker ranker = new ArmorRanker(armorSets);
+            winningArmorSets = ranker.getWinningSets();
+        } else {
+            // Optimized approach: filter during generation (Phase 1)
+            System.out.println("Using optimized mode (Phase 1: incremental Pareto filtering)");
+            System.out.println("Producing Pareto-optimal armor combinations...");
+            winningArmorSets = combinator.getOptimalArmorSets();
+        }
+
         System.out.println(String.format("Ideal armor combinations found: %d", winningArmorSets.size()));
-        writeOutResults(ranker.getWinningSets());
+        writeOutResults(winningArmorSets);
     }
 
     private static void writeOutResults(Collection<ArmorSet> winningSets) throws IOException {
