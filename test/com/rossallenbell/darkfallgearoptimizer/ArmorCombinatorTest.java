@@ -27,6 +27,11 @@ public class ArmorCombinatorTest {
     
     @Before
     public void setUp() {
+        // Configure protection weights for tests (match original defaults)
+        DarkfallGearOptimizer.protectionWeights.clear();
+        DarkfallGearOptimizer.protectionWeights.put(PROTECTION.Slashing, 1.0);
+        DarkfallGearOptimizer.protectionWeights.put(PROTECTION.Fire, 1.0);
+
         scaleArms = new Armor(ARMOR_TYPE.Scale, ARMOR_SLOT.Arms, 1);
         scaleArms.addResistance(PROTECTION.Slashing, 0.25);
         scaleGloves = new Armor(ARMOR_TYPE.Scale, ARMOR_SLOT.Gauntlets, 1);

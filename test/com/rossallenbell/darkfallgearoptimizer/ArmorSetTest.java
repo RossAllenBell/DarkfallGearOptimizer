@@ -28,6 +28,11 @@ public class ArmorSetTest {
     
     @Before
     public void setUp() throws IOException {
+        // Configure protection weights for tests (match original defaults)
+        DarkfallGearOptimizer.protectionWeights.clear();
+        DarkfallGearOptimizer.protectionWeights.put(PROTECTION.Slashing, 1.0);
+        DarkfallGearOptimizer.protectionWeights.put(PROTECTION.Fire, 1.0);
+
         CsvArmorProvider csvArmorProvider = new CsvArmorProvider();
         armors = csvArmorProvider
                 .read(new BufferedReader(new InputStreamReader(

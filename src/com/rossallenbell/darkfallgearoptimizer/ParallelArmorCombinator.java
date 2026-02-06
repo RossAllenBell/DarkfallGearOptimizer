@@ -65,7 +65,7 @@ public class ParallelArmorCombinator {
                 break; // No more work
             }
 
-            Callable<StreamingParetoFilter> worker = new Worker(slotBuckets, slots, start, end);
+            Callable<StreamingParetoFilter> worker = new Worker(slotBuckets, slots, start, end, t);
             futures.add(executor.submit(worker));
         }
 
@@ -109,12 +109,14 @@ public class ParallelArmorCombinator {
         private final List<ARMOR_SLOT> slots;
         private final int start;
         private final int end;
+        private final int threadId;
 
-        public Worker(Map<ARMOR_SLOT, List<Armor>> slotBuckets, List<ARMOR_SLOT> slots, int start, int end) {
+        public Worker(Map<ARMOR_SLOT, List<Armor>> slotBuckets, List<ARMOR_SLOT> slots, int start, int end, int threadId) {
             this.slotBuckets = slotBuckets;
             this.slots = slots;
             this.start = start;
             this.end = end;
+            this.threadId = threadId;
         }
 
         @Override
@@ -130,6 +132,16 @@ public class ParallelArmorCombinator {
             // Set outer slot to start position
             ARMOR_SLOT outerSlot = slots.get(slots.size() - 1);
             slotPointers.put(outerSlot, start);
+
+            // Calculate total combinations for this thread
+            long totalForThread = 1;
+            for (int i = 0; i < slots.size() - 1; i++) {
+                totalForThread *= slotBuckets.get(slots.get(i)).size();
+            }
+            totalForThread *= (end - start);
+
+            long count = 0;
+            int lastReportedPercentile = 0;
 
             // Generate combinations for this thread's range
             while (slotPointers.get(outerSlot) < end) {
@@ -149,6 +161,17 @@ public class ParallelArmorCombinator {
                         slotPointers.put(nextSlot, slotPointers.get(nextSlot) + 1);
                     } else {
                         break;
+                    }
+                }
+
+                count++;
+
+                // Report progress at 10% intervals
+                int currentPercentile = (int) (((double) count / totalForThread) * 10);
+                if (currentPercentile > lastReportedPercentile && currentPercentile <= 10) {
+                    lastReportedPercentile = currentPercentile;
+                    synchronized (System.out) {
+                        System.out.println(String.format("Thread %d progress: %d0%%", threadId, currentPercentile));
                     }
                 }
             }

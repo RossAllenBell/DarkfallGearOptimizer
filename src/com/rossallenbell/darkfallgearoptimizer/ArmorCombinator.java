@@ -46,7 +46,8 @@ public class ArmorCombinator {
             slotPointers.put(slot, 0);
         }
         ARMOR_SLOT mostSignificantSlot = slots.get(slots.size()-1);
-        int count = 0;
+        long count = 0;
+        int lastReportedPercentile = 0;
         while(slotPointers.get(mostSignificantSlot) < slotBuckets.get(mostSignificantSlot).size()){
             ArmorSet armorSet = new ArmorSet();
             for(ARMOR_SLOT slot : slots){
@@ -65,8 +66,12 @@ public class ArmorCombinator {
                 }
             }
             count++;
-            if(count % 100000 == 0){
-                System.out.println(String.format("Processed %d (%s%%) combinations, retaining %d (%s%%)", count, DarkfallGearOptimizer.formatter.format(((double) count) / totalPossibleNonUniqueArmorSets * 100), armorSets.size(), DarkfallGearOptimizer.formatter.format(((double) armorSets.size()) / totalPossibleNonUniqueArmorSets * 100) ));
+
+            // Report progress at 10% intervals
+            int currentPercentile = (int) (((double) count / totalPossibleNonUniqueArmorSets) * 10);
+            if (currentPercentile > lastReportedPercentile && currentPercentile <= 10) {
+                lastReportedPercentile = currentPercentile;
+                System.out.println(String.format("Progress: %d0%%", currentPercentile));
             }
         }
 
@@ -100,7 +105,8 @@ public class ArmorCombinator {
             slotPointers.put(slot, 0);
         }
         ARMOR_SLOT mostSignificantSlot = slots.get(slots.size()-1);
-        int count = 0;
+        long count = 0;
+        int lastReportedPercentile = 0;
         while(slotPointers.get(mostSignificantSlot) < slotBuckets.get(mostSignificantSlot).size()){
             ArmorSet armorSet = new ArmorSet();
             for(ARMOR_SLOT slot : slots){
@@ -119,22 +125,17 @@ public class ArmorCombinator {
                 }
             }
             count++;
-            if(count % 100000 == 0){
-                System.out.println(String.format("Processed %d (%s%%) combinations, %d unique (%s%%), %d Pareto-optimal (%s%%), collisions: %d (%.4f%%)",
-                    count,
-                    DarkfallGearOptimizer.formatter.format(((double) count) / totalPossibleNonUniqueArmorSets * 100),
-                    filter.getSeenCount(),
-                    DarkfallGearOptimizer.formatter.format(((double) filter.getSeenCount()) / totalPossibleNonUniqueArmorSets * 100),
-                    filter.getFrontierCount(),
-                    DarkfallGearOptimizer.formatter.format(((double) filter.getFrontierCount()) / totalPossibleNonUniqueArmorSets * 100),
-                    filter.getHashCollisions(),
-                    filter.getCollisionRate()
-                ));
+
+            // Report progress at 10% intervals
+            int currentPercentile = (int) (((double) count / totalPossibleNonUniqueArmorSets) * 10);
+            if (currentPercentile > lastReportedPercentile && currentPercentile <= 10) {
+                lastReportedPercentile = currentPercentile;
+                System.out.println(String.format("Progress: %d0%%", currentPercentile));
             }
         }
 
-        System.out.println(String.format("Final hash collision rate: %.4f%% (%d collisions out of %d unique sets)",
-                filter.getCollisionRate(), filter.getHashCollisions(), filter.getSeenCount()));
+        System.out.println(String.format("Final: Processed %d combinations, %d unique, %d Pareto-optimal, collisions: %d (%.4f%%)",
+                count, filter.getSeenCount(), filter.getFrontierCount(), filter.getHashCollisions(), filter.getCollisionRate()));
 
         return filter.getWinningSets();
     }

@@ -1,8 +1,11 @@
 package com.rossallenbell.darkfallgearoptimizer;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
@@ -15,6 +18,7 @@ import org.junit.Test;
 import com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer.ARMOR_SLOT;
 import com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer.ARMOR_TYPE;
 import com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer.PROTECTION;
+import com.rossallenbell.darkfallgearoptimizer.data.CsvArmorProvider;
 
 public class EndToEndTest {
 
@@ -27,6 +31,11 @@ public class EndToEndTest {
 
     @Before
     public void setUp() {
+        // Configure protection weights for tests (match original defaults)
+        DarkfallGearOptimizer.protectionWeights.clear();
+        DarkfallGearOptimizer.protectionWeights.put(PROTECTION.Slashing, 1.0);
+        DarkfallGearOptimizer.protectionWeights.put(PROTECTION.Fire, 1.0);
+
         scaleArms = new Armor(ARMOR_TYPE.Scale, ARMOR_SLOT.Arms, 1);
         scaleArms.addResistance(PROTECTION.Slashing, 0.25);
         scaleGloves = new Armor(ARMOR_TYPE.Scale, ARMOR_SLOT.Gauntlets, 1);
@@ -134,6 +143,36 @@ public class EndToEndTest {
             ArmorSet set2 = iter2.next();
             assertEquals("Encumbrance should match", set1.getEncumbrance(), set2.getEncumbrance(), 0.001);
             assertEquals("Resistance should match", set1.getResistanceScore(), set2.getResistanceScore(), 0.001);
+        }
+    }
+
+    @Test
+    public void testMinimalDataset() throws FileNotFoundException, IOException {
+        // Test with the actual minimal dataset file
+        CsvArmorProvider provider = new CsvArmorProvider();
+        Set<Armor> armors = provider.readFilePath("./data/armor-data-minimal.csv");
+
+        assertFalse("Minimal dataset should not be empty", armors.isEmpty());
+
+        // Run the optimized algorithm
+        ArmorCombinator combinator = new ArmorCombinator(armors);
+        Collection<ArmorSet> winningSets = combinator.getOptimalArmorSets();
+
+        assertFalse("Should produce some optimal sets", winningSets.isEmpty());
+
+        // Verify Pareto optimality
+        for (ArmorSet set1 : winningSets) {
+            for (ArmorSet set2 : winningSets) {
+                if (set1 != set2) {
+                    // Neither should dominate the other
+                    boolean set1Dominates = set1.getEncumbrance() <= set2.getEncumbrance()
+                            && set1.getResistanceScore() >= set2.getResistanceScore()
+                            && (set1.getEncumbrance() < set2.getEncumbrance()
+                                    || set1.getResistanceScore() > set2.getResistanceScore());
+
+                    assertFalse("No winning set should dominate another in minimal dataset", set1Dominates);
+                }
+            }
         }
     }
 }
