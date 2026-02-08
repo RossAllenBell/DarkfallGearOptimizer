@@ -37,6 +37,14 @@ public class DarkfallGearOptimizer {
     public static Map<PROTECTION, Double> protectionWeights = new HashMap<PROTECTION, Double>();
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
+        // Check for help flag first
+        for (String arg : args) {
+            if (arg.equals("-h") || arg.equals("--help")) {
+                printHelp();
+                return;
+            }
+        }
+
         // Parse arguments
         String filePath = "./data/default_set.csv";
         boolean useLegacy = false;
@@ -274,6 +282,50 @@ public class DarkfallGearOptimizer {
 
         System.out.println(String.format("Ideal armor combinations found: %d", winningArmorSets.size()));
         writeOutResults(winningArmorSets, outputFormat, filePath, timestamp);
+    }
+
+    private static void printHelp() {
+        System.out.println("Darkfall Gear Optimizer");
+        System.out.println();
+        System.out.println("USAGE:");
+        System.out.println("  java -cp \"bin:lib/*\" com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer [dataset] [options]");
+        System.out.println("  ./run.sh [dataset] [options]");
+        System.out.println();
+        System.out.println("OPTIONS:");
+        System.out.println("  -h, --help              Show this help message");
+        System.out.println("  --format <text|json>    Output format (default: text)");
+        System.out.println("  --weight <type>=<val>   Set protection weight (e.g., slashing=1.0)");
+        System.out.println("                          Can be specified multiple times");
+        System.out.println("  --threads <num>         Number of threads for parallel processing (default: 1)");
+        System.out.println("  --generate-presets      Generate all 16 preset combinations");
+        System.out.println("  --use-legacy            Use legacy algorithm (slower, for comparison)");
+        System.out.println();
+        System.out.println("PROTECTION TYPES:");
+        System.out.println("  bludgeoning, piercing, slashing, acid, cold, fire, holy, lightning, unholy, impact");
+        System.out.println();
+        System.out.println("EXAMPLES:");
+        System.out.println("  # Generate all presets (recommended for web apps)");
+        System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --threads 4 --generate-presets");
+        System.out.println();
+        System.out.println("  # Single protection type");
+        System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --weight slashing=1.0");
+        System.out.println();
+        System.out.println("  # Multiple protection types (50/50 slashing and fire)");
+        System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --weight slashing=1.0 --weight fire=1.0");
+        System.out.println();
+        System.out.println("  # Weighted combination (75% slashing, 25% fire)");
+        System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --weight slashing=1.0 --weight fire=0.33");
+        System.out.println();
+        System.out.println("NOTES:");
+        System.out.println("  - Weights are relative to each other (slashing=1.0, fire=1.0 is same as slashing=2.0, fire=2.0)");
+        System.out.println("  - Default weights if none specified: slashing=1.0, fire=1.0");
+        System.out.println("  - Output files named: results-YYYY-MM-DD-HH-mm-ss-[dataset]-[weights].[json|txt]");
+        System.out.println("  - With --generate-presets, all 16 files share the same timestamp");
+        System.out.println();
+        System.out.println("DATASETS:");
+        System.out.println("  ./data/armor-data-minimal.csv   - Small dataset for testing");
+        System.out.println("  ./data/armor-data-common.csv    - Medium dataset");
+        System.out.println("  ./data/armor-data-complete.csv  - Full dataset (recommended for production)");
     }
 
     private static void parseWeightSpec(String weightSpec) {

@@ -10,8 +10,10 @@ import java.util.TreeMap;
  * Phase 2 optimization: Hash-based deduplication instead of Map storage.
  * Stores integer hash codes instead of full Map objects, reducing memory usage by ~90%.
  *
- * Memory impact: 95MB → 7.6MB (98% total reduction from baseline)
- * Performance impact: 2x faster (better cache locality)
+ * Supports a two-phase API for hot loops: check() tests dedup + Pareto dominance
+ * using only primitive values, and addWinner() inserts the ArmorSet only when needed.
+ * This avoids allocating ArmorSet objects for the 99%+ of combinations that are
+ * duplicates or dominated.
  */
 public class StreamingParetoFilter {
 
@@ -31,70 +33,65 @@ public class StreamingParetoFilter {
     }
 
     /**
-     * Tries to add an ArmorSet to the filter.
-     * Returns true if the set was added to the Pareto frontier, false otherwise.
+     * Phase 1 of two-phase API: checks dedup hash and Pareto dominance using only
+     * primitive values. Returns true if the combination should be added (caller
+     * should then build the ArmorSet and call addWinner).
      */
-    public boolean tryAdd(ArmorSet armorSet) {
-        // Compute hash of slot-agnostic armor composition
-        int hash = armorSet.getSAArmorWithCounts().hashCode();
-
-        // Check for duplicate hash
+    public boolean check(int hash, double encumbrance, double resistanceScore) {
+        // Dedup check
         if (seenHashes.contains(hash)) {
-            // Hash collision detection: verify it's actually a duplicate
-            // by checking if same encumbrance exists (very unlikely to be different set)
-            double encumbrance = armorSet.getEncumbrance();
             if (paretoFrontier.containsKey(encumbrance)) {
                 ArmorSet existing = paretoFrontier.get(encumbrance);
-                if (Math.abs(existing.getResistanceScore() - armorSet.getResistanceScore()) < 0.0001) {
-                    // Confirmed duplicate
-                    return false;
+                if (Math.abs(existing.getResistanceScore() - resistanceScore) < 0.0001) {
+                    return false; // Confirmed duplicate
                 }
-                // Potential hash collision - different set with same hash
                 hashCollisions++;
             } else {
-                // Hash collision - different set with same hash
                 hashCollisions++;
             }
         }
 
-        // Mark hash as seen
         seenHashes.add(hash);
 
-        // Check if this set belongs on the Pareto frontier
-        // Logic identical to ParetoDeduplicatingFilter and ArmorRanker
+        // Pareto dominance check
+        if (paretoFrontier.containsKey(encumbrance)) {
+            return paretoFrontier.get(encumbrance).getResistanceScore() < resistanceScore;
+        } else {
+            SortedMap<Double, ArmorSet> lighterSets = paretoFrontier.headMap(encumbrance);
+            return lighterSets.isEmpty() || lighterSets.get(lighterSets.lastKey()).getResistanceScore() < resistanceScore;
+        }
+    }
+
+    /**
+     * Phase 2 of two-phase API: adds a winning ArmorSet to the frontier and
+     * removes dominated entries. Only call after check() returns true.
+     */
+    public void addWinner(double encumbrance, double resistanceScore, ArmorSet armorSet) {
+        SortedMap<Double, ArmorSet> heavierSets = paretoFrontier.tailMap(encumbrance);
+        while (!heavierSets.isEmpty()) {
+            double nextLightestEncumbrance = heavierSets.firstKey();
+            if (heavierSets.get(nextLightestEncumbrance).getResistanceScore() <= resistanceScore) {
+                paretoFrontier.remove(nextLightestEncumbrance);
+            } else {
+                break;
+            }
+            heavierSets = paretoFrontier.tailMap(encumbrance);
+        }
+        paretoFrontier.put(encumbrance, armorSet);
+    }
+
+    /**
+     * Convenience method combining check + addWinner. Used by merge step and
+     * backward-compatible callers.
+     */
+    public boolean tryAdd(ArmorSet armorSet) {
+        int hash = armorSet.getSAArmorWithCounts().hashCode();
         double encumbrance = armorSet.getEncumbrance();
         double resistanceScore = armorSet.getResistanceScore();
-        boolean winner = false;
-
-        if (paretoFrontier.containsKey(encumbrance)) {
-            // Same encumbrance - keep only if higher resistance
-            if (paretoFrontier.get(encumbrance).getResistanceScore() < resistanceScore) {
-                winner = true;
-            }
-        } else {
-            // Different encumbrance - check if dominated by lighter sets
-            SortedMap<Double, ArmorSet> lighterSets = paretoFrontier.headMap(encumbrance);
-            if (lighterSets.isEmpty() || lighterSets.get(lighterSets.lastKey()).getResistanceScore() < resistanceScore) {
-                winner = true;
-            }
-        }
-
-        if (winner) {
-            // Remove heavier sets that this set dominates
-            SortedMap<Double, ArmorSet> heavierSets = paretoFrontier.tailMap(encumbrance);
-            while (!heavierSets.isEmpty()) {
-                double nextLightestEncumbrance = heavierSets.firstKey();
-                if (heavierSets.get(nextLightestEncumbrance).getResistanceScore() <= resistanceScore) {
-                    paretoFrontier.remove(nextLightestEncumbrance);
-                } else {
-                    break;
-                }
-                heavierSets = paretoFrontier.tailMap(encumbrance);
-            }
-            paretoFrontier.put(encumbrance, armorSet);
+        if (check(hash, encumbrance, resistanceScore)) {
+            addWinner(encumbrance, resistanceScore, armorSet);
             return true;
         }
-
         return false;
     }
 
@@ -121,7 +118,6 @@ public class StreamingParetoFilter {
 
     /**
      * Returns the number of hash collisions detected.
-     * Should be very low (<0.01%) with a good hash function.
      */
     public int getHashCollisions() {
         return hashCollisions;

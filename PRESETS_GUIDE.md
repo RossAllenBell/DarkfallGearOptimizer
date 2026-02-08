@@ -5,6 +5,10 @@ This guide explains how to use the `--generate-presets` option to generate all c
 ## Basic Usage
 
 ```bash
+# Simple way (recommended)
+./run.sh ./data/armor-data-minimal.csv --format json --generate-presets
+
+# Or the full Java command
 java -cp "bin:lib/*" com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer \
   ./data/armor-data-minimal.csv \
   --format json \
@@ -61,11 +65,7 @@ One file for each protection type, optimized 100% for that type:
 
 ```bash
 # Generate all presets for the complete dataset using 4 threads
-java -cp "bin:lib/*" com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer \
-  ./data/armor-data-complete.csv \
-  --format json \
-  --threads 4 \
-  --generate-presets
+./run.sh ./data/armor-data-complete.csv --format json --threads 4 --generate-presets
 ```
 
 ## Output
@@ -80,11 +80,7 @@ Since you're building a static web app, you can:
 
 1. Generate all presets for your desired dataset once:
    ```bash
-   java -cp "bin:lib/*" com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer \
-     ./data/armor-data-complete.csv \
-     --format json \
-     --threads 4 \
-     --generate-presets
+   ./run.sh ./data/armor-data-complete.csv --format json --threads 4 --generate-presets
    ```
 
 2. Host the JSON files as static assets

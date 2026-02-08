@@ -11,21 +11,23 @@ import com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer.ARMOR_TYPE;
 import com.rossallenbell.darkfallgearoptimizer.DarkfallGearOptimizer.PROTECTION;
 
 public class Armor {
-    
+
     public final ARMOR_TYPE type;
-    
+
     public final ARMOR_SLOT slot;
-    
+
     public final double encumbrance;
-    
+
     private final Map<PROTECTION, Double> resistances;
-    
+
     private SlotAgnosticArmor sahArmor;
-    
+
     private boolean sahArmorReferenced = false;
-    
+
     private int hashCode;
-    
+
+    private double cachedResistanceScore = Double.NaN;
+
     public Armor(ARMOR_TYPE armorType, ARMOR_SLOT armorSlot, double encumbrance) {
         type = armorType;
         slot = armorSlot;
@@ -34,7 +36,7 @@ public class Armor {
         sahArmor = null;
         hashCode = generatehashCode();
     }
-    
+
     public void addResistance(PROTECTION protection, Double value) {
         if(sahArmorReferenced){
             throw new IllegalStateException("You cannot add resistances after referencing the SlotAgnosticArmor");
@@ -42,13 +44,17 @@ public class Armor {
         resistances.put(protection, value);
         sahArmor = null;
         hashCode = generatehashCode();
+        cachedResistanceScore = Double.NaN;
     }
-    
+
     private double getResistance(PROTECTION protection){
         return this.resistances.containsKey(protection)? this.resistances.get(protection) : 0;
     }
-    
+
     public double getResistanceScore() {
+        if (!Double.isNaN(cachedResistanceScore)) {
+            return cachedResistanceScore;
+        }
         double totalWeights = 0;
         for(PROTECTION protection : DarkfallGearOptimizer.protectionWeights.keySet()){
             totalWeights += DarkfallGearOptimizer.protectionWeights.get(protection);
@@ -57,14 +63,15 @@ public class Armor {
         for(PROTECTION protection : DarkfallGearOptimizer.protectionWeights.keySet()){
             score += getResistance(protection) * DarkfallGearOptimizer.protectionWeights.get(protection) / totalWeights;
         }
+        cachedResistanceScore = score;
         return score;
     }
-    
+
     @Override
     public String toString() {
         return this.slot + " - " + this.type;
     }
-    
+
     @Override
     public int hashCode() {
         return hashCode;
@@ -82,7 +89,7 @@ public class Armor {
         result = prime * result + ((type == null) ? 0 : type.hashCode());
         return result;
     }
-    
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -106,7 +113,7 @@ public class Armor {
             return false;
         return true;
     }
-    
+
     public SlotAgnosticArmor getSlotAgnosticArmor(){
         if(sahArmor == null){
             sahArmor = new SlotAgnosticArmor(this);
@@ -114,38 +121,44 @@ public class Armor {
         }
         return sahArmor;
     }
-    
+
     public static class SlotAgnosticArmor implements Comparable<SlotAgnosticArmor> {
-        
+
         public static final Set<ARMOR_SLOT> interchangeables = new HashSet<ARMOR_SLOT>(Arrays.asList(new ARMOR_SLOT[] {ARMOR_SLOT.Boots, ARMOR_SLOT.Gauntlets, ARMOR_SLOT.Arms, ARMOR_SLOT.Elbows, ARMOR_SLOT.Shoulders, ARMOR_SLOT.Greaves, ARMOR_SLOT.Girdle}));
-        
+
         private Armor armor;
-        
+
         private int hashCode;
-        
+
+        private double cachedResistanceScore = Double.NaN;
+
         private SlotAgnosticArmor(Armor armor) {
             this.armor = armor;
             hashCode = generateHashCode();
         }
-        
+
         public double getResistanceScore() {
-            return armor.getResistanceScore();
+            if (!Double.isNaN(cachedResistanceScore)) {
+                return cachedResistanceScore;
+            }
+            cachedResistanceScore = armor.getResistanceScore();
+            return cachedResistanceScore;
         }
-        
+
         public double getEncumbrance(){
             return armor.encumbrance;
         }
-        
+
         @Override
         public String toString(){
             return  (interchangeables.contains(armor.slot)? "(interchangeable)" : armor.slot) + " - " +  armor.type;
         }
-        
+
         @Override
         public int hashCode() {
             return hashCode;
         }
-        
+
         @Override
         public boolean equals(Object obj) {
             if (this == obj)
@@ -165,7 +178,7 @@ public class Armor {
         /*
          * We can only do this because the backing Armor will throw an
          * exception if it is modified after this SlotAgnosticArmor is
-         * referenced 
+         * referenced
          */
         public int generateHashCode() {
             final int prime = 31;
@@ -186,7 +199,7 @@ public class Armor {
         public int compareTo(SlotAgnosticArmor other) {
             return armor.slot.ordinal() - other.armor.slot.ordinal();
         }
-        
+
     }
-    
+
 }
