@@ -1,0 +1,6538 @@
+{
+  "metadata": {
+    "dataset": "complete",
+    "inputFile": "data/armor-data-complete.csv",
+    "timestamp": "2026-02-08T16:43:47Z",
+    "availabilityTier": "common+fp",
+    "protectionWeights": {
+      "Cold": 0.5,
+      "Unholy": 0.5,
+      "Slashing": 1.0,
+      "Fire": 0.5,
+      "Lightning": 0.5,
+      "Bludgeoning": 1.0,
+      "Piercing": 1.0,
+      "Acid": 0.5,
+      "Holy": 0.5
+    }
+  },
+  "results": [
+    {
+      "rank": 1,
+      "totalProtection": 0.0,
+      "encumbrance": 0.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece2": {
+          "description": "Head - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece3": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "totalProtection": 0.08048064122998312,
+      "encumbrance": 0.75,
+      "gear": {
+        "piece1": {
+          "description": "Head - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.08048064122998312
+        },
+        "piece2": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece3": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "totalProtection": 0.11669793184805409,
+      "encumbrance": 1.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece2": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece3": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Head - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.11669793184805409
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "totalProtection": 0.20260152297482142,
+      "encumbrance": 1.5,
+      "gear": {
+        "piece1": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece2": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece3": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "totalProtection": 0.24284184358981298,
+      "encumbrance": 2.25,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "totalProtection": 0.2559634694284888,
+      "encumbrance": 2.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "totalProtection": 0.29707923314244444,
+      "encumbrance": 2.9,
+      "gear": {
+        "piece1": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece2": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece3": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece4": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "totalProtection": 0.3021513982643039,
+      "encumbrance": 3.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "totalProtection": 0.3093254158821562,
+      "encumbrance": 3.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "totalProtection": 0.337319553757436,
+      "encumbrance": 3.65,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "totalProtection": 0.34239171887929554,
+      "encumbrance": 3.75,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "totalProtection": 0.35551334471797136,
+      "encumbrance": 3.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "totalProtection": 0.35621509579096067,
+      "encumbrance": 4.35,
+      "gear": {
+        "piece1": {
+          "description": "Chest - Cloth",
+          "count": 1,
+          "encumbrance": 2.85,
+          "protection": 0.15361357281613924
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "totalProtection": 0.396629108431927,
+      "encumbrance": 4.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "totalProtection": 0.4017012735537865,
+      "encumbrance": 4.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "totalProtection": 0.40887529117163873,
+      "encumbrance": 4.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "totalProtection": 0.43686942904691856,
+      "encumbrance": 5.15,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "totalProtection": 0.4419415941687781,
+      "encumbrance": 5.25,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "totalProtection": 0.4550632200074539,
+      "encumbrance": 5.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "totalProtection": 0.45576497108044317,
+      "encumbrance": 5.85,
+      "gear": {
+        "piece1": {
+          "description": "Chest - Cloth",
+          "count": 1,
+          "encumbrance": 2.85,
+          "protection": 0.15361357281613924
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "totalProtection": 0.49617898372140956,
+      "encumbrance": 5.9,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "totalProtection": 0.501251148843269,
+      "encumbrance": 6.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "totalProtection": 0.5084251664611212,
+      "encumbrance": 6.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 24,
+      "totalProtection": 0.5364193043364012,
+      "encumbrance": 6.65,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 25,
+      "totalProtection": 0.5414914694582607,
+      "encumbrance": 6.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 26,
+      "totalProtection": 0.5546130952969364,
+      "encumbrance": 6.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 27,
+      "totalProtection": 0.5546130952969365,
+      "encumbrance": 7.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 28,
+      "totalProtection": 0.5553148463699258,
+      "encumbrance": 7.35,
+      "gear": {
+        "piece1": {
+          "description": "Chest - Cloth",
+          "count": 1,
+          "encumbrance": 2.85,
+          "protection": 0.15361357281613924
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 29,
+      "totalProtection": 0.5957288590108921,
+      "encumbrance": 7.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 30,
+      "totalProtection": 0.6119058462294393,
+      "encumbrance": 7.5,
+      "gear": {
+        "piece1": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece2": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece3": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 31,
+      "totalProtection": 0.6359691796258837,
+      "encumbrance": 8.15,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        }
+      }
+    },
+    {
+      "rank": 32,
+      "totalProtection": 0.6521461668444308,
+      "encumbrance": 8.25,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "totalProtection": 0.6652677926831067,
+      "encumbrance": 8.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 34,
+      "totalProtection": 0.7063835563970623,
+      "encumbrance": 8.9,
+      "gear": {
+        "piece1": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece2": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 7,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece3": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece4": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 35,
+      "totalProtection": 0.7114557215189218,
+      "encumbrance": 9.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "totalProtection": 0.718629739136774,
+      "encumbrance": 9.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "totalProtection": 0.7466238770120539,
+      "encumbrance": 9.65,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "totalProtection": 0.7516960421339134,
+      "encumbrance": 9.75,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "totalProtection": 0.7648176679725892,
+      "encumbrance": 9.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "totalProtection": 0.8059334316865449,
+      "encumbrance": 10.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 6,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 41,
+      "totalProtection": 0.8110055968084043,
+      "encumbrance": 10.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "totalProtection": 0.8181796144262565,
+      "encumbrance": 10.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "totalProtection": 0.8461737523015365,
+      "encumbrance": 11.15,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "totalProtection": 0.851245917423396,
+      "encumbrance": 11.25,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "totalProtection": 0.8643675432620718,
+      "encumbrance": 11.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 46,
+      "totalProtection": 0.9054833069760274,
+      "encumbrance": 11.9,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 47,
+      "totalProtection": 0.9105554720978869,
+      "encumbrance": 12.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 5,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 48,
+      "totalProtection": 0.9177294897157391,
+      "encumbrance": 12.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 49,
+      "totalProtection": 0.945723627591019,
+      "encumbrance": 12.65,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 50,
+      "totalProtection": 0.9507957927128784,
+      "encumbrance": 12.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 51,
+      "totalProtection": 0.9639174185515542,
+      "encumbrance": 12.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 52,
+      "totalProtection": 0.9639174185515543,
+      "encumbrance": 13.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 53,
+      "totalProtection": 1.0050331822655099,
+      "encumbrance": 13.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 54,
+      "totalProtection": 1.0101053473873693,
+      "encumbrance": 13.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 4,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 55,
+      "totalProtection": 1.0172793650052216,
+      "encumbrance": 13.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 56,
+      "totalProtection": 1.0452735028805016,
+      "encumbrance": 14.15,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 57,
+      "totalProtection": 1.050345668002361,
+      "encumbrance": 14.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 58,
+      "totalProtection": 1.0634672938410368,
+      "encumbrance": 14.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 59,
+      "totalProtection": 1.063467293841037,
+      "encumbrance": 14.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 60,
+      "totalProtection": 1.1045830575549926,
+      "encumbrance": 14.9,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 61,
+      "totalProtection": 1.1096552226768521,
+      "encumbrance": 15.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 62,
+      "totalProtection": 1.1168292402947042,
+      "encumbrance": 15.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 63,
+      "totalProtection": 1.1448233781699841,
+      "encumbrance": 15.65,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "totalProtection": 1.1498955432918436,
+      "encumbrance": 15.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 65,
+      "totalProtection": 1.1630171691305193,
+      "encumbrance": 15.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 66,
+      "totalProtection": 1.204132932844475,
+      "encumbrance": 16.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 67,
+      "totalProtection": 1.2092050979663345,
+      "encumbrance": 16.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 68,
+      "totalProtection": 1.2310987213867222,
+      "encumbrance": 17.15,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece7": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 69,
+      "totalProtection": 1.2361708865085816,
+      "encumbrance": 17.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 70,
+      "totalProtection": 1.2492925123472576,
+      "encumbrance": 17.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece3": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 71,
+      "totalProtection": 1.2904082760612132,
+      "encumbrance": 17.9,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 72,
+      "totalProtection": 1.2954804411830727,
+      "encumbrance": 18.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 73,
+      "totalProtection": 1.3173740646034604,
+      "encumbrance": 18.65,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 74,
+      "totalProtection": 1.3224462297253199,
+      "encumbrance": 18.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 75,
+      "totalProtection": 1.3355678555639956,
+      "encumbrance": 18.8,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 76,
+      "totalProtection": 1.3766836192779512,
+      "encumbrance": 19.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 77,
+      "totalProtection": 1.3817557843998107,
+      "encumbrance": 19.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.20260152297482142
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 78,
+      "totalProtection": 1.406857925844093,
+      "encumbrance": 21.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 79,
+      "totalProtection": 1.4119300909659525,
+      "encumbrance": 21.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 3,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 80,
+      "totalProtection": 1.4191041085838048,
+      "encumbrance": 21.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 81,
+      "totalProtection": 1.4470982464590847,
+      "encumbrance": 22.15,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 82,
+      "totalProtection": 1.4521704115809442,
+      "encumbrance": 22.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 83,
+      "totalProtection": 1.4652920374196199,
+      "encumbrance": 22.3,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 84,
+      "totalProtection": 1.5064078011335755,
+      "encumbrance": 22.9,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 85,
+      "totalProtection": 1.511479966255435,
+      "encumbrance": 23.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 2,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 86,
+      "totalProtection": 1.5333735896758227,
+      "encumbrance": 23.65,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece7": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 87,
+      "totalProtection": 1.5384457547976822,
+      "encumbrance": 23.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 88,
+      "totalProtection": 1.5515673806363581,
+      "encumbrance": 23.8,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece3": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 89,
+      "totalProtection": 1.5926831443503138,
+      "encumbrance": 24.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 90,
+      "totalProtection": 1.5977553094721733,
+      "encumbrance": 24.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - NoArmor",
+          "count": 1,
+          "encumbrance": 0.0,
+          "protection": 0.0
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 91,
+      "totalProtection": 1.6196489328925607,
+      "encumbrance": 25.15,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 92,
+      "totalProtection": 1.6247210980144204,
+      "encumbrance": 25.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 93,
+      "totalProtection": 1.6378427238530961,
+      "encumbrance": 25.3,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "Legs - Padded",
+          "count": 1,
+          "encumbrance": 0.8,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 94,
+      "totalProtection": 1.6789584875670518,
+      "encumbrance": 25.9,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 95,
+      "totalProtection": 1.6840306526889113,
+      "encumbrance": 26.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 96,
+      "totalProtection": 1.7086735827519308,
+      "encumbrance": 28.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece3": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 97,
+      "totalProtection": 1.7516446951399225,
+      "encumbrance": 29.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 98,
+      "totalProtection": 1.7654122881204088,
+      "encumbrance": 30.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 99,
+      "totalProtection": 1.7785339139590848,
+      "encumbrance": 31.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 100,
+      "totalProtection": 1.8247218427949,
+      "encumbrance": 31.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 101,
+      "totalProtection": 1.8329242097457847,
+      "encumbrance": 32.4,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 102,
+      "totalProtection": 1.8379963748676442,
+      "encumbrance": 32.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 103,
+      "totalProtection": 1.8626393049306638,
+      "encumbrance": 35.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece3": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 104,
+      "totalProtection": 1.9056104173186554,
+      "encumbrance": 36.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 105,
+      "totalProtection": 1.9056104173186557,
+      "encumbrance": 37.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Scale",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.16716391774049377
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 106,
+      "totalProtection": 1.9193780102991418,
+      "encumbrance": 37.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece7": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 107,
+      "totalProtection": 1.9324996361378177,
+      "encumbrance": 37.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece7": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 108,
+      "totalProtection": 1.9786875649736329,
+      "encumbrance": 38.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 109,
+      "totalProtection": 1.986889931924518,
+      "encumbrance": 38.9,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Legs - Studded",
+          "count": 1,
+          "encumbrance": 1.4,
+          "protection": 0.09447771016762305
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 110,
+      "totalProtection": 1.9919620970463774,
+      "encumbrance": 39.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 111,
+      "totalProtection": 2.0166050271093967,
+      "encumbrance": 41.5,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 112,
+      "totalProtection": 2.0595761394973886,
+      "encumbrance": 42.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 113,
+      "totalProtection": 2.073343732477875,
+      "encumbrance": 43.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 114,
+      "totalProtection": 2.086465358316551,
+      "encumbrance": 44.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 115,
+      "totalProtection": 2.1326532871523662,
+      "encumbrance": 44.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 116,
+      "totalProtection": 2.157296217215386,
+      "encumbrance": 48.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 3,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 117,
+      "totalProtection": 2.2002673296033777,
+      "encumbrance": 49.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 3,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 118,
+      "totalProtection": 2.214034922583864,
+      "encumbrance": 50.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 3,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 119,
+      "totalProtection": 2.2271565484225397,
+      "encumbrance": 50.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 3,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 120,
+      "totalProtection": 2.273344477258355,
+      "encumbrance": 51.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 3,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 121,
+      "totalProtection": 2.2979874073213744,
+      "encumbrance": 54.5,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 122,
+      "totalProtection": 2.340958519709366,
+      "encumbrance": 55.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 123,
+      "totalProtection": 2.3547261126898524,
+      "encumbrance": 56.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 124,
+      "totalProtection": 2.3678477385285284,
+      "encumbrance": 57.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 125,
+      "totalProtection": 2.4140356673643435,
+      "encumbrance": 57.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 126,
+      "totalProtection": 2.415417519540282,
+      "encumbrance": 60.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        }
+      }
+    },
+    {
+      "rank": 127,
+      "totalProtection": 2.438678597427363,
+      "encumbrance": 61.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 128,
+      "totalProtection": 2.4816497098153545,
+      "encumbrance": 62.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 129,
+      "totalProtection": 2.481649709815355,
+      "encumbrance": 63.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Scale",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.16716391774049377
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 130,
+      "totalProtection": 2.495417302795841,
+      "encumbrance": 63.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 131,
+      "totalProtection": 2.5085389286345166,
+      "encumbrance": 63.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 132,
+      "totalProtection": 2.5547268574703317,
+      "encumbrance": 64.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 133,
+      "totalProtection": 2.554726857470332,
+      "encumbrance": 65.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 134,
+      "totalProtection": 2.5693832417190148,
+      "encumbrance": 67.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Leather",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.08627534321673809
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 135,
+      "totalProtection": 2.5793697875333517,
+      "encumbrance": 67.5,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 136,
+      "totalProtection": 2.5826577737917598,
+      "encumbrance": 68.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 137,
+      "totalProtection": 2.622340899921343,
+      "encumbrance": 68.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 138,
+      "totalProtection": 2.6223408999213436,
+      "encumbrance": 69.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Scale",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.16716391774049377
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece6": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 139,
+      "totalProtection": 2.63610849290183,
+      "encumbrance": 69.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 140,
+      "totalProtection": 2.6492301187405056,
+      "encumbrance": 70.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 141,
+      "totalProtection": 2.6954180475763208,
+      "encumbrance": 70.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 142,
+      "totalProtection": 2.695418047576321,
+      "encumbrance": 71.5,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 7,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 143,
+      "totalProtection": 2.723348963897748,
+      "encumbrance": 73.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 5,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 2,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 144,
+      "totalProtection": 2.7233489638977484,
+      "encumbrance": 74.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 3,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 145,
+      "totalProtection": 2.763032090027332,
+      "encumbrance": 75.0,
+      "gear": {
+        "piece1": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece2": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece3": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 7,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 146,
+      "totalProtection": 2.83610923768231,
+      "encumbrance": 77.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 7,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Chest - Bone",
+          "count": 1,
+          "encumbrance": 6.0,
+          "protection": 0.40930432325461785
+        }
+      }
+    },
+    {
+      "rank": 147,
+      "totalProtection": 2.864040154003737,
+      "encumbrance": 80.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 4,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 3,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 148,
+      "totalProtection": 2.8886830840667566,
+      "encumbrance": 83.5,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 149,
+      "totalProtection": 2.9316541964547485,
+      "encumbrance": 84.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 150,
+      "totalProtection": 2.9454217894352346,
+      "encumbrance": 85.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 151,
+      "totalProtection": 2.9585434152739105,
+      "encumbrance": 86.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 152,
+      "totalProtection": 3.0047313441097256,
+      "encumbrance": 86.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 3,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 153,
+      "totalProtection": 3.029374274172745,
+      "encumbrance": 90.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 154,
+      "totalProtection": 3.0723453865607366,
+      "encumbrance": 91.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 155,
+      "totalProtection": 3.072345386560737,
+      "encumbrance": 92.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Scale",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.16716391774049377
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 4,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 156,
+      "totalProtection": 3.086112979541223,
+      "encumbrance": 92.25,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 157,
+      "totalProtection": 3.0992346053798987,
+      "encumbrance": 92.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 158,
+      "totalProtection": 3.145422534215714,
+      "encumbrance": 93.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 2,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 159,
+      "totalProtection": 3.1454225342157143,
+      "encumbrance": 94.0,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 160,
+      "totalProtection": 3.170065464278734,
+      "encumbrance": 96.5,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Chain",
+          "count": 1,
+          "encumbrance": 4.0,
+          "protection": 0.1241928053525021
+        },
+        "piece2": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 161,
+      "totalProtection": 3.2130365766667253,
+      "encumbrance": 97.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 162,
+      "totalProtection": 3.2130365766667257,
+      "encumbrance": 98.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "(interchangeable) - Scale",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.16716391774049377
+        },
+        "piece3": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece4": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece5": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece6": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 5,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 163,
+      "totalProtection": 3.2268041696472123,
+      "encumbrance": 98.75,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Cloth",
+          "count": 1,
+          "encumbrance": 0.75,
+          "protection": 0.04024032061499156
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 164,
+      "totalProtection": 3.2399257954858878,
+      "encumbrance": 99.0,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Padded",
+          "count": 1,
+          "encumbrance": 1.0,
+          "protection": 0.05336194645366739
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 165,
+      "totalProtection": 3.286113724321703,
+      "encumbrance": 99.5,
+      "gear": {
+        "piece1": {
+          "description": "(interchangeable) - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 166,
+      "totalProtection": 3.2861137243217033,
+      "encumbrance": 100.5,
+      "gear": {
+        "piece1": {
+          "description": "Legs - Bone",
+          "count": 1,
+          "encumbrance": 1.5,
+          "protection": 0.09954987528948253
+        },
+        "piece2": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 7,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 167,
+      "totalProtection": 3.310756654384723,
+      "encumbrance": 103.0,
+      "gear": {
+        "piece1": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece2": {
+          "description": "(interchangeable) - Chain",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.1241928053525021
+        },
+        "piece3": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece4": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece5": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 6,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 168,
+      "totalProtection": 3.3537277667727143,
+      "encumbrance": 104.0,
+      "gear": {
+        "piece1": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece2": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece3": {
+          "description": "Legs - Scale",
+          "count": 1,
+          "encumbrance": 5.0,
+          "protection": 0.16716391774049377
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 7,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    },
+    {
+      "rank": 169,
+      "totalProtection": 3.426804914427692,
+      "encumbrance": 106.0,
+      "gear": {
+        "piece1": {
+          "description": "Chest - FullPlate",
+          "count": 1,
+          "encumbrance": 35.0,
+          "protection": 1.0
+        },
+        "piece2": {
+          "description": "Legs - FullPlate",
+          "count": 1,
+          "encumbrance": 7.0,
+          "protection": 0.24024106539547121
+        },
+        "piece3": {
+          "description": "Head - FullPlate",
+          "count": 1,
+          "encumbrance": 8.0,
+          "protection": 0.5048763912639219
+        },
+        "piece4": {
+          "description": "(interchangeable) - FullPlate",
+          "count": 7,
+          "encumbrance": 8.0,
+          "protection": 0.24024106539547121
+        }
+      }
+    }
+  ]
+}
