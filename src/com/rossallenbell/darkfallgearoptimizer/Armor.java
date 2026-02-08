@@ -47,7 +47,7 @@ public class Armor {
         cachedResistanceScore = Double.NaN;
     }
 
-    private double getResistance(PROTECTION protection){
+    double getResistance(PROTECTION protection){
         return this.resistances.containsKey(protection)? this.resistances.get(protection) : 0;
     }
 
@@ -61,7 +61,10 @@ public class Armor {
         }
         double score = 0;
         for(PROTECTION protection : DarkfallGearOptimizer.protectionWeights.keySet()){
-            score += getResistance(protection) * DarkfallGearOptimizer.protectionWeights.get(protection) / totalWeights;
+            double resistance = getResistance(protection);
+            Double maxValue = DarkfallGearOptimizer.protectionMaxValues.get(protection);
+            double normalized = (maxValue != null && maxValue > 0) ? resistance / maxValue : 0;
+            score += normalized * DarkfallGearOptimizer.protectionWeights.get(protection) / totalWeights;
         }
         cachedResistanceScore = score;
         return score;

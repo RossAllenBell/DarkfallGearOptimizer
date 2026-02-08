@@ -32,9 +32,17 @@ public class DarkfallGearOptimizer {
         Chest, Head, Legs, Boots, Gauntlets, Arms, Elbows, Shoulders, Greaves, Girdle
     }
 
+    public static enum AVAILABILITY_TIER {
+        Common,               // Exclude FullPlate, Infernal, Dragon
+        CommonFullPlate,      // Exclude Infernal, Dragon
+        CommonFullPlateInfernal, // Exclude Dragon
+        All                   // Everything
+    }
+
     public static final DecimalFormat formatter = new DecimalFormat("00.00");
 
     public static Map<PROTECTION, Double> protectionWeights = new HashMap<PROTECTION, Double>();
+    public static Map<PROTECTION, Double> protectionMaxValues = new HashMap<PROTECTION, Double>();
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         // Check for help flag first
@@ -51,6 +59,7 @@ public class DarkfallGearOptimizer {
         int threads = 1;
         String outputFormat = "text";
         boolean generatePresets = false;
+        AVAILABILITY_TIER tier = AVAILABILITY_TIER.All;
 
         // Default protection weights (Slashing + Fire)
         protectionWeights.put(PROTECTION.Slashing, 1.0);
@@ -101,6 +110,23 @@ public class DarkfallGearOptimizer {
                     System.err.println("--weight requires an argument (e.g., slashing=1.0)");
                     System.exit(1);
                 }
+            } else if (arg.equals("--tier")) {
+                if (i + 1 < args.length) {
+                    String tierArg = args[i + 1].toLowerCase();
+                    switch (tierArg) {
+                        case "common": tier = AVAILABILITY_TIER.Common; break;
+                        case "fullplate": tier = AVAILABILITY_TIER.CommonFullPlate; break;
+                        case "infernal": tier = AVAILABILITY_TIER.CommonFullPlateInfernal; break;
+                        case "all": tier = AVAILABILITY_TIER.All; break;
+                        default:
+                            System.err.println("Invalid tier: " + args[i + 1] + ". Must be 'common', 'fullplate', 'infernal', or 'all'");
+                            System.exit(1);
+                    }
+                    i++; // Skip next arg
+                } else {
+                    System.err.println("--tier requires an argument (common, fullplate, infernal, all)");
+                    System.exit(1);
+                }
             } else if (arg.equals("--generate-presets")) {
                 generatePresets = true;
             } else if (!arg.startsWith("--")) {
@@ -119,7 +145,9 @@ public class DarkfallGearOptimizer {
         }
 
         Set<Armor> armors = new CsvArmorProvider().readFilePath(filePath);
-        System.out.println(String.format("Found %d pieces of armor at %s", armors.size(), filePath));
+        armors = filterArmorsByTier(armors, tier);
+        computeProtectionMaxValues(armors);
+        System.out.println(String.format("Found %d pieces of armor at %s (tier: %s)", armors.size(), filePath, tierDisplayName(tier)));
         ArmorCombinator combinator = new ArmorCombinator(armors);
         Map<ARMOR_SLOT, List<Armor>> slotBuckets = combinator.getSlotBuckets();
         long totalPossibleNonUniqueArmorSets = 1;
@@ -156,41 +184,29 @@ public class DarkfallGearOptimizer {
         }
 
         System.out.println(String.format("Ideal armor combinations found: %d", winningArmorSets.size()));
-        writeOutResults(winningArmorSets, outputFormat, filePath, null);
+        writeOutResults(winningArmorSets, outputFormat, filePath, null, tier);
     }
 
     private static void generateAllPresets(String filePath, String outputFormat, boolean useLegacy, int threads) throws FileNotFoundException, IOException {
         System.out.println("Generating all preset protection weight combinations...");
         System.out.println();
 
-        // Generate single timestamp for entire batch
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-        String batchTimestamp = dateFormat.format(new Date());
-
+        List<String> presetNames = new ArrayList<>();
+        List<String> presetFileKeys = new ArrayList<>();
         List<Map<PROTECTION, Double>> presets = new ArrayList<>();
 
-        // Individual protection types (10 presets)
-        for (PROTECTION protection : PROTECTION.values()) {
-            Map<PROTECTION, Double> weights = new HashMap<>();
-            weights.put(protection, 1.0);
-            presets.add(weights);
-        }
-
-        // All protections
-        Map<PROTECTION, Double> allProtections = new HashMap<>();
-        for (PROTECTION protection : PROTECTION.values()) {
-            allProtections.put(protection, 1.0);
-        }
-        presets.add(allProtections);
-
-        // Physical protections (Bludgeoning, Piercing, Slashing)
+        // Physical
+        presetNames.add("Physical");
+        presetFileKeys.add("physical");
         Map<PROTECTION, Double> physical = new HashMap<>();
         physical.put(PROTECTION.Bludgeoning, 1.0);
         physical.put(PROTECTION.Piercing, 1.0);
         physical.put(PROTECTION.Slashing, 1.0);
         presets.add(physical);
 
-        // Magic protections (Acid, Cold, Fire, Holy, Lightning, Unholy, Impact)
+        // Magic
+        presetNames.add("Magic");
+        presetFileKeys.add("magic");
         Map<PROTECTION, Double> magic = new HashMap<>();
         magic.put(PROTECTION.Acid, 1.0);
         magic.put(PROTECTION.Cold, 1.0);
@@ -198,56 +214,98 @@ public class DarkfallGearOptimizer {
         magic.put(PROTECTION.Holy, 1.0);
         magic.put(PROTECTION.Lightning, 1.0);
         magic.put(PROTECTION.Unholy, 1.0);
-        magic.put(PROTECTION.Impact, 1.0);
         presets.add(magic);
 
-        // Slashing + Fire (equal)
-        Map<PROTECTION, Double> slashingFire = new HashMap<>();
-        slashingFire.put(PROTECTION.Slashing, 1.0);
-        slashingFire.put(PROTECTION.Fire, 1.0);
-        presets.add(slashingFire);
+        // Piercing
+        presetNames.add("Piercing");
+        presetFileKeys.add("piercing");
+        Map<PROTECTION, Double> piercing = new HashMap<>();
+        piercing.put(PROTECTION.Piercing, 1.0);
+        presets.add(piercing);
 
-        // Slashing-heavy + Fire
-        Map<PROTECTION, Double> slashingHeavy = new HashMap<>();
-        slashingHeavy.put(PROTECTION.Slashing, 1.0);
-        slashingHeavy.put(PROTECTION.Fire, 0.33);
-        presets.add(slashingHeavy);
+        // Phys+Magic 50/50
+        presetNames.add("Phys+Magic 50/50");
+        presetFileKeys.add("physical50-magic50");
+        Map<PROTECTION, Double> physMagic5050 = new HashMap<>();
+        physMagic5050.put(PROTECTION.Bludgeoning, 1.0);
+        physMagic5050.put(PROTECTION.Piercing, 1.0);
+        physMagic5050.put(PROTECTION.Slashing, 1.0);
+        physMagic5050.put(PROTECTION.Acid, 0.5);
+        physMagic5050.put(PROTECTION.Cold, 0.5);
+        physMagic5050.put(PROTECTION.Fire, 0.5);
+        physMagic5050.put(PROTECTION.Holy, 0.5);
+        physMagic5050.put(PROTECTION.Lightning, 0.5);
+        physMagic5050.put(PROTECTION.Unholy, 0.5);
+        presets.add(physMagic5050);
 
-        // Fire-heavy + Slashing
-        Map<PROTECTION, Double> fireHeavy = new HashMap<>();
-        fireHeavy.put(PROTECTION.Slashing, 0.33);
-        fireHeavy.put(PROTECTION.Fire, 1.0);
-        presets.add(fireHeavy);
+        // Phys+Magic 33/66
+        presetNames.add("Phys+Magic 33/66");
+        presetFileKeys.add("physical33-magic66");
+        Map<PROTECTION, Double> physMagic3366 = new HashMap<>();
+        physMagic3366.put(PROTECTION.Bludgeoning, 1.0);
+        physMagic3366.put(PROTECTION.Piercing, 1.0);
+        physMagic3366.put(PROTECTION.Slashing, 1.0);
+        physMagic3366.put(PROTECTION.Acid, 1.0);
+        physMagic3366.put(PROTECTION.Cold, 1.0);
+        physMagic3366.put(PROTECTION.Fire, 1.0);
+        physMagic3366.put(PROTECTION.Holy, 1.0);
+        physMagic3366.put(PROTECTION.Lightning, 1.0);
+        physMagic3366.put(PROTECTION.Unholy, 1.0);
+        presets.add(physMagic3366);
 
-        int totalPresets = presets.size();
-        int currentPreset = 0;
+        // Phys+Magic 66/33
+        presetNames.add("Phys+Magic 66/33");
+        presetFileKeys.add("physical66-magic33");
+        Map<PROTECTION, Double> physMagic6633 = new HashMap<>();
+        physMagic6633.put(PROTECTION.Bludgeoning, 1.0);
+        physMagic6633.put(PROTECTION.Piercing, 1.0);
+        physMagic6633.put(PROTECTION.Slashing, 1.0);
+        physMagic6633.put(PROTECTION.Acid, 0.25);
+        physMagic6633.put(PROTECTION.Cold, 0.25);
+        physMagic6633.put(PROTECTION.Fire, 0.25);
+        physMagic6633.put(PROTECTION.Holy, 0.25);
+        physMagic6633.put(PROTECTION.Lightning, 0.25);
+        physMagic6633.put(PROTECTION.Unholy, 0.25);
+        presets.add(physMagic6633);
 
-        for (Map<PROTECTION, Double> weights : presets) {
-            currentPreset++;
-            System.out.println(String.format("========== Preset %d/%d ==========", currentPreset, totalPresets));
-            System.out.print("Protection weights: ");
-            List<String> weightDescriptions = new ArrayList<>();
-            for (Map.Entry<PROTECTION, Double> entry : weights.entrySet()) {
-                weightDescriptions.add(entry.getKey().name() + "=" + entry.getValue());
+        AVAILABILITY_TIER[] tiers = AVAILABILITY_TIER.values();
+        int totalRuns = tiers.length * presets.size();
+        int currentRun = 0;
+
+        for (AVAILABILITY_TIER tierValue : tiers) {
+            for (int p = 0; p < presets.size(); p++) {
+                currentRun++;
+                String presetName = presetNames.get(p);
+                String presetFileKey = presetFileKeys.get(p);
+                Map<PROTECTION, Double> weights = presets.get(p);
+
+                System.out.println(String.format("========== [%d/%d] Tier: %s | Preset: %s ==========", currentRun, totalRuns, tierDisplayName(tierValue), presetName));
+                System.out.print("Protection weights: ");
+                List<String> weightDescriptions = new ArrayList<>();
+                for (Map.Entry<PROTECTION, Double> entry : weights.entrySet()) {
+                    weightDescriptions.add(entry.getKey().name() + "=" + entry.getValue());
+                }
+                System.out.println(String.join(", ", weightDescriptions));
+                System.out.println();
+
+                runWithWeights(filePath, outputFormat, useLegacy, threads, weights, presetFileKey, tierValue);
+                System.out.println();
             }
-            System.out.println(String.join(", ", weightDescriptions));
-            System.out.println();
-
-            runWithWeights(filePath, outputFormat, useLegacy, threads, weights, batchTimestamp);
-            System.out.println();
         }
 
-        System.out.println(String.format("Successfully generated %d preset combinations!", totalPresets));
+        System.out.println(String.format("Successfully generated %d preset combinations!", totalRuns));
     }
 
-    private static void runWithWeights(String filePath, String outputFormat, boolean useLegacy, int threads, Map<PROTECTION, Double> weights, String timestamp) throws FileNotFoundException, IOException {
+    private static void runWithWeights(String filePath, String outputFormat, boolean useLegacy, int threads, Map<PROTECTION, Double> weights, String presetFileKey, AVAILABILITY_TIER tier) throws FileNotFoundException, IOException {
         // Set the protection weights
         protectionWeights.clear();
         protectionWeights.putAll(weights);
 
         // Load armor data
         Set<Armor> armors = new CsvArmorProvider().readFilePath(filePath);
-        System.out.println(String.format("Found %d pieces of armor at %s", armors.size(), filePath));
+        armors = filterArmorsByTier(armors, tier);
+        computeProtectionMaxValues(armors);
+        System.out.println(String.format("Found %d pieces of armor at %s (tier: %s)", armors.size(), filePath, tierDisplayName(tier)));
 
         ArmorCombinator combinator = new ArmorCombinator(armors);
         Map<ARMOR_SLOT, List<Armor>> slotBuckets = combinator.getSlotBuckets();
@@ -281,7 +339,7 @@ public class DarkfallGearOptimizer {
         }
 
         System.out.println(String.format("Ideal armor combinations found: %d", winningArmorSets.size()));
-        writeOutResults(winningArmorSets, outputFormat, filePath, timestamp);
+        writeOutResults(winningArmorSets, outputFormat, filePath, presetFileKey, tier);
     }
 
     private static void printHelp() {
@@ -296,36 +354,91 @@ public class DarkfallGearOptimizer {
         System.out.println("  --format <text|json>    Output format (default: text)");
         System.out.println("  --weight <type>=<val>   Set protection weight (e.g., slashing=1.0)");
         System.out.println("                          Can be specified multiple times");
+        System.out.println("  --tier <tier>           Armor availability tier (default: all)");
+        System.out.println("                          Values: common, fullplate, infernal, all");
         System.out.println("  --threads <num>         Number of threads for parallel processing (default: 1)");
-        System.out.println("  --generate-presets      Generate all 16 preset combinations");
+        System.out.println("  --generate-presets      Generate all 24 preset combinations (6 presets x 4 tiers)");
         System.out.println("  --use-legacy            Use legacy algorithm (slower, for comparison)");
+        System.out.println();
+        System.out.println("AVAILABILITY TIERS:");
+        System.out.println("  common     - Excludes FullPlate, Infernal, and Dragon armor");
+        System.out.println("  fullplate  - Excludes Infernal and Dragon armor");
+        System.out.println("  infernal   - Excludes Dragon armor");
+        System.out.println("  all        - All armor types included");
         System.out.println();
         System.out.println("PROTECTION TYPES:");
         System.out.println("  bludgeoning, piercing, slashing, acid, cold, fire, holy, lightning, unholy, impact");
         System.out.println();
         System.out.println("EXAMPLES:");
-        System.out.println("  # Generate all presets (recommended for web apps)");
+        System.out.println("  # Generate all 24 presets (6 weight presets x 4 tiers)");
         System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --threads 4 --generate-presets");
         System.out.println();
-        System.out.println("  # Single protection type");
-        System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --weight slashing=1.0");
+        System.out.println("  # Single run with tier filter");
+        System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --weight slashing=1.0 --tier common");
         System.out.println();
-        System.out.println("  # Multiple protection types (50/50 slashing and fire)");
+        System.out.println("  # Multiple protection types");
         System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --weight slashing=1.0 --weight fire=1.0");
-        System.out.println();
-        System.out.println("  # Weighted combination (75% slashing, 25% fire)");
-        System.out.println("  ./run.sh ./data/armor-data-complete.csv --format json --weight slashing=1.0 --weight fire=0.33");
         System.out.println();
         System.out.println("NOTES:");
         System.out.println("  - Weights are relative to each other (slashing=1.0, fire=1.0 is same as slashing=2.0, fire=2.0)");
         System.out.println("  - Default weights if none specified: slashing=1.0, fire=1.0");
-        System.out.println("  - Output files named: results-YYYY-MM-DD-HH-mm-ss-[dataset]-[weights].[json|txt]");
-        System.out.println("  - With --generate-presets, all 16 files share the same timestamp");
+        System.out.println("  - Output files named: results-[dataset]-[tier]-[weights].[json|txt]");
         System.out.println();
         System.out.println("DATASETS:");
         System.out.println("  ./data/armor-data-minimal.csv   - Small dataset for testing");
         System.out.println("  ./data/armor-data-common.csv    - Medium dataset");
         System.out.println("  ./data/armor-data-complete.csv  - Full dataset (recommended for production)");
+    }
+
+    private static Set<Armor> filterArmorsByTier(Set<Armor> armors, AVAILABILITY_TIER tier) {
+        Set<ARMOR_TYPE> excludedTypes = new java.util.HashSet<>();
+        switch (tier) {
+            case Common:
+                excludedTypes.add(ARMOR_TYPE.FullPlate);
+                excludedTypes.add(ARMOR_TYPE.Infernal);
+                excludedTypes.add(ARMOR_TYPE.Dragon);
+                break;
+            case CommonFullPlate:
+                excludedTypes.add(ARMOR_TYPE.Infernal);
+                excludedTypes.add(ARMOR_TYPE.Dragon);
+                break;
+            case CommonFullPlateInfernal:
+                excludedTypes.add(ARMOR_TYPE.Dragon);
+                break;
+            case All:
+                break;
+        }
+        Set<Armor> filtered = new java.util.HashSet<>();
+        for (Armor armor : armors) {
+            if (armor.type == ARMOR_TYPE.NoArmor || !excludedTypes.contains(armor.type)) {
+                filtered.add(armor);
+            }
+        }
+        return filtered;
+    }
+
+    private static String tierDisplayName(AVAILABILITY_TIER tier) {
+        switch (tier) {
+            case Common: return "common";
+            case CommonFullPlate: return "common+fp";
+            case CommonFullPlateInfernal: return "common+fp+inf";
+            case All: return "all";
+            default: return tier.name().toLowerCase();
+        }
+    }
+
+    private static void computeProtectionMaxValues(Set<Armor> armors) {
+        protectionMaxValues.clear();
+        for (Armor armor : armors) {
+            if (armor.type == ARMOR_TYPE.NoArmor) continue;
+            for (PROTECTION protection : PROTECTION.values()) {
+                double value = armor.getResistance(protection);
+                Double currentMax = protectionMaxValues.get(protection);
+                if (currentMax == null || value > currentMax) {
+                    protectionMaxValues.put(protection, value);
+                }
+            }
+        }
     }
 
     private static void parseWeightSpec(String weightSpec) {
@@ -390,22 +503,18 @@ public class DarkfallGearOptimizer {
         return String.join("-", parts);
     }
 
-    private static void writeOutResults(Collection<ArmorSet> winningSets, String format, String inputFilePath, String timestamp) throws IOException {
-        // If timestamp not provided, generate a new one
-        if (timestamp == null) {
-            SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-            timestamp = dateFormat.format(new Date());
-        }
+    private static void writeOutResults(Collection<ArmorSet> winningSets, String format, String inputFilePath, String presetFileKey, AVAILABILITY_TIER tier) throws IOException {
         String datasetName = extractDatasetName(inputFilePath);
-        String weightIndicator = generateWeightIndicator();
+        String tierName = tierDisplayName(tier);
+        String weightPart = presetFileKey != null ? presetFileKey : generateWeightIndicator();
         String extension = format.equals("json") ? ".json" : ".txt";
-        String filePath = "./results-" + timestamp + "-" + datasetName + "-" + weightIndicator + extension;
+        String filePath = "./results-" + datasetName + "-" + tierName + "-" + weightPart + extension;
 
         System.out.println("Writing to path: " + filePath);
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(new File(filePath)));
 
         if (format.equals("json")) {
-            writeJsonOutput(bufferedWriter, winningSets, datasetName, inputFilePath);
+            writeJsonOutput(bufferedWriter, winningSets, datasetName, inputFilePath, tierName);
         } else {
             writeTextOutput(bufferedWriter, winningSets);
         }
@@ -419,7 +528,7 @@ public class DarkfallGearOptimizer {
         }
     }
 
-    private static void writeJsonOutput(BufferedWriter writer, Collection<ArmorSet> winningSets, String datasetName, String inputFilePath) throws IOException {
+    private static void writeJsonOutput(BufferedWriter writer, Collection<ArmorSet> winningSets, String datasetName, String inputFilePath, String tierName) throws IOException {
         SimpleDateFormat isoFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
         String timestamp = isoFormat.format(new Date());
 
@@ -428,6 +537,7 @@ public class DarkfallGearOptimizer {
         writer.write("    \"dataset\": \"" + datasetName + "\",\n");
         writer.write("    \"inputFile\": \"" + inputFilePath + "\",\n");
         writer.write("    \"timestamp\": \"" + timestamp + "\",\n");
+        writer.write("    \"availabilityTier\": \"" + tierName + "\",\n");
         writer.write("    \"protectionWeights\": {\n");
 
         int weightCount = 0;
